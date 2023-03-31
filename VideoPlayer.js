@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Video from 'react-native-video';
+import FontAwesome from "react-native-vector-icons/FontAwesome"
 import {
   TouchableWithoutFeedback,
   TouchableHighlight,
@@ -1013,10 +1014,11 @@ export default class VideoPlayer extends Component {
         <View
           style={[styles.volume.handle, {left: this.state.volumePosition}]}
           {...this.player.volumePanResponder.panHandlers}>
-          <Image
+          {/* <Image
             style={styles.volume.icon}
             source={require('./assets/img/volume.png')}
-          />
+          /> */}
+          <FontAwesome name='volume-off' color={"#fff"} size={27} />
         </View>
       </View>
     );
