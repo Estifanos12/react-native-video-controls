@@ -1018,7 +1018,7 @@ export default class VideoPlayer extends Component {
             style={styles.volume.icon}
             source={require('./assets/img/volume.png')}
           /> */}
-          <FontAwesome name='volume-off' color={"#fff"} size={27} />
+          <FontAwesome name='volume-off' color={"#fff"} size={30} />
         </View>
       </View>
     );
@@ -1377,13 +1377,14 @@ const styles = {
       textAlign: 'center',
     },
     timer: {
-      width: 80,
+      marginTop: -10,
+      width: 100,
     },
     timerText: {
       backgroundColor: 'transparent',
       color: '#FFF',
-      fontSize: 11,
-      textAlign: 'right',
+      fontSize: 14,
+      textAlign: 'center',
     },
   }),
   volume: StyleSheet.create({
@@ -1402,8 +1403,8 @@ const styles = {
       marginLeft: 7,
     },
     fill: {
-      backgroundColor: '#FFF',
-      height: 1,
+      backgroundColor: '#F1E900',
+      height: 3,
     },
     handle: {
       position: 'absolute',
@@ -1424,14 +1425,14 @@ const styles = {
     },
     track: {
       backgroundColor: '#333',
-      height: 1,
+      height: 3,
       position: 'relative',
       top: 14,
       width: '100%',
     },
     fill: {
-      backgroundColor: '#FFF',
-      height: 1,
+      backgroundColor: '#F1E900',
+      height: 3,
       width: '100%',
     },
     handle: {
